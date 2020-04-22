@@ -21,7 +21,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { TextFormatDirective } from './directives/text-format.directive';
 import { SelectizeComponent } from './components/selectize/selectize.component';
 
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent,
     HomeComponent,
