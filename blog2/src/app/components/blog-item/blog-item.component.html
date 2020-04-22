@@ -1,2 +1,12 @@
-<blog-item-image [image]="image"></blog-item-image>
-<blog-item-text [text]="text"></blog-item-text>
+<div id="main">
+  <div class="col-sm-4 offset-5">
+    <div class="card" style="width: 18rem;">
+      <blog-item-image [image]="image"></blog-item-image>
+      <div class="card-body">
+
+        <blog-item-text [id]="id" [text]="text"></blog-item-text>
+        <a [routerLink]="['/blog/detail/', id]" class="btn btn-primary">Wiecej</a>
+      </div>
+    </div>
+  </div>
+</div>
