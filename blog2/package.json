@@ -21,8 +21,11 @@
     "@angular/router": "~8.2.11",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.5",
+    "sha1": "^1.1.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },

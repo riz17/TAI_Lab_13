@@ -1,21 +1,15 @@
 'use strict';
-import postManager from './post.manager'
+
+import userManager from './user.manager';
 
 function getContext(request) {
   return { user: request && request.user };
 }
 
-function getter(manager, request) {
-  return function () {
-    return manager.create(getContext(request), this);
-  };
+function getter(manager) {
+  return (request) => manager.create(getContext(request));
 }
 
-const createBusinessContainer = (request, config) => {
-
-  return {
-    getPostManager: getter(postManager, request)
-  };
+export default {
+  getUserManager: getter(userManager)
 };
-
-export default createBusinessContainer;
